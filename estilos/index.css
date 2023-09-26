@@ -301,6 +301,9 @@ body {
 .projectImg:hover {
   scale: 1.05;
 }
+.projectImg:not(:hover) {
+  opacity: 50%;
+}
 .textPart {
   text-align: left;
 }
