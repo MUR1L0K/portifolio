@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="estilos/index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav">
+        <div>
+          <a href="#presentationSection"><img src="images/botao-home-white.png" alt="" id="homeButton" /></a>
+        </div>
+        <div id="linksPart">
+          <a href="#aboutSection" class="menuLinks">Sobre</a
+          ><a href="#skillsSection" class="menuLinks">Habilidades</a
+          ><a href="#projectsSection" class="menuLinks">Projetos</a
+          ><a href="#contactSection" class="menuLinks">Contato</a>
+          <button id="themeButton">
+            <img
+              src="images/brightness-removebg-preview-white.png"
+              alt=""
+              id="themeImg"
+            />
+          </button>
+          <a href="#" download="images/github.png"
+            ><button id="downloadButton">Download CV</button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="presentationSection">
+        <div id="presentationText">
+          <h1 id="presentationTitle">Bem vindo ao meu Portifólio 👋</h1>
+          <p id="presentationP">
+            Me chamo Murilo, sou um dev Full-Stack apaixonado por transformar
+            ideias em realidade, combinando habilidades técnicas e criatividade.
+            Estou sempre em busca de novas oportunidades para aperfeiçoar minhas
+            habilidades e trabalhar em projetos desafiadores.
+          </p>
+          <div id="locationText">
+            <img src="images/location-white.png" alt="" id="locationImg" />
+            <p>Passo Fundo / Brasil</p>
+          </div>
+          <div id="onlineText">
+            <div id="onlineImg"></div>
+            <p>Disponível para novos projetos</p>
+          </div>
+          <div class="socialLinks">
+            <a href=""
+              ><img
+                src="images/github-removebg-preview-white.png"
+                alt=""
+                class="otherLinks" /></a
+            ><a href=""
+              ><img
+                src="images/linkedin-removebg-preview-white.png"
+                alt=""
+                class="otherLinks"
+            /></a>
+          </div>
+        </div>
+        <div>
+          <img src="images/profile.jpg" alt="" id="profileImg" />
+          <div id="imgBackground"></div>
+        </div>
+      </section>
+      <section id="aboutSection">
+        <h3 class="SectionsTitle">Sobre mim.</h2>
+        <div id="aboutPart">
+          <div id="aboutImgPart">
+            <img src="images/profile.jpg" alt="" id="aboutImg"/>
+            <div id="backAboutImg"></div>
+          </div>
+          <div id="aboutTextPart">
+            <h2>Curious about me? Here you have it:</h2>
+            <p class="aboutP">I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
+            <p class="aboutP">I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+            </p>
+            <p class="aboutP">I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
+            <p class="aboutP">When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+            <p class="aboutP">Finally, some quick bits about me.</p>
+            <ul class="aboutP" id="aboutUl">
+              <li>B.E. in Computer Engineering
+              </li>
+              <li>Full time freelancer
+              </li>
+              <li>Avid learner
+              </li>
+              <li>Aspiring indie hacker
+              </li>
+            </ul>
+            <p class="aboutP">One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉</p>
+          </div>
+        </div>
+      </section>
+      <section id="skillsSection">
+        <h3 class="SectionsTitle">Habilidades</h3>
+        <p id="skillsSmallText">The skills, tools and technologies I am really good at:</p>
+        <div id="sckillsTable">
+          <div class="tableItems"><img src="images/icon-html-removebg-preview.png" alt="">HTML</div>
+          <div class="tableItems"><img src="images/icon-css.png" alt=""><p>CSS</p></div>
+          <div class="tableItems"><img src="images/icon-javascript.svg" alt=""><p>JavaScript</p></div>
+          <div class="tableItems"><img src="images/icon-react.svg" alt=""><p>React.Js</p></div>
+          <div class="tableItems"><img src="images/icon-nodejs.svg" alt=""><p>Node.Js</p></div>
+          <div class="tableItems"><img src="images/icon-sass.svg" alt=""><p>Sass</p></div>
+          <div class="tableItems"><img src="images/icon-figma.svg" alt=""><p>Figma</p></div>
+          <div class="tableItems"><img src="images/php-icon-removebg-preview.png" alt=""><p>PHP</p></div>
+        </div>
+      </section>
+      <section id="projectsSection">
+        <h3 class="SectionsTitle">Projetos</h3>
+        <p id="projectsSmallText">Some of the noteworthy projects I have built:</p>
+        <div id="projectsList">
+          <div class="projects">
+            <div class="imgPart"><img src="images/projeto-calculadora.png" alt="" class="projectImg"></div>
+            <div class="textPart">
+              <h2>Calculadora</h2><p>A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="" class="linkContainer"><img src="images/external-link-removebg-preview-white.png" alt="" class="linkImg"></a>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="imgPart"><img src="images/projeto-weather.png" alt="" class="projectImg"></div>
+            <div class="textPart">
+              <h2>Weather Site</h2><p>A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="" class="linkContainer"><img src="images/external-link-removebg-preview-white.png" alt="" class="linkImg"></a>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="imgPart"><img src="images/projeto-marcador.png" alt="" class="projectImg"></div>
+            <div class="textPart">
+              <h2>Marcador de pontos</h2><p>A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.</p>
+              <p><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="" class="linkContainer"><img src="images/external-link-removebg-preview-white.png" alt="" class="linkImg"></a>
+            </div>
+            <div>
+            </div>
+          </div>
+          <a href="" ><img src="images/plus-icon.png" alt="" id="plusLink"></a>
+        </div>
+      </section>
+      <section id="contactSection">
+        <h3 class="SectionsTitle">Entrar em contato</h3>
+        <p class="contactSmallText">What’s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.</p>
+        <div id="contactDiv">
+          <p class="contactText"><img src="images/mail-icon-white.png" alt="" class="contactIcons"> murilo.kkleinn@gmail.com <button class="copyButton"><img src="images/copy-icon-removebg-preview-white.png" alt="" class="contactIcons"></button></p>
+          <p class="contactText"><img src="images/phone-icon-removebg-preview-white.png" alt="" class="contactIcons"> +55 (54) 99148-7046 <button class="copyButton"><img src="images/copy-icon-removebg-preview-white.png" alt="" class="contactIcons"></button></p>
+        </div>
+        <p class="contactSmallText">You may also find me on these platforms!</p>
+        <div class="socialLinks">
+          <a href=""
+            ><img
+              src="images/github-removebg-preview-white.png"
+              alt=""
+              class="otherLinks" /></a
+          ><a href=""
+            ><img
+              src="images/linkedin-removebg-preview-white.png"
+              alt=""
+              class="otherLinks"
+          /></a>
+      </section>
+    </main>
+    <footer id="footer">
+      <p id="footerText"> &copy; 2023 | Designed and coded by Murilo Klein</p>
+    </footer>
+  </body>
+</html>
