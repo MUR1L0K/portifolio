@@ -46,12 +46,14 @@ body {
 }
 #nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 20px 30px;
 }
 #linksPart {
   display: flex;
+  flex-wrap: wrap;
   gap: 35px;
 }
 .menuLinks {
@@ -97,11 +99,13 @@ body {
 }
 #presentationSection {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--backGroundOne);
   color: var(--letterColorOne);
-  padding: 110px 0px;
+  height: 100vh;
+  border-bottom: 1px solid var(--backGroundThree);
 }
 #presentationText {
   width: 55%;
@@ -121,7 +125,6 @@ body {
 #imgBackground {
   margin-top: -280px;
   margin-left: 40px;
-  display: block;
   background-color: var(--backGroundFour);
   width: 280px;
   height: 310px;
@@ -145,7 +148,6 @@ body {
   padding-top: 10px;
 }
 #onlineImg {
-  display: block;
   background-color: rgb(6, 163, 6);
   border-radius: 50%;
   width: 15px;
@@ -171,9 +173,11 @@ body {
   color: var(--letterColorOne);
   text-align: center;
   padding-top: 50px;
+  border-bottom: 1px solid var(--backGroundThree);
 }
 #aboutPart {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   padding: 30px;
@@ -191,12 +195,10 @@ body {
   width: 400px;
   margin-left: 10px;
   border: 10px solid var(--backGroundTwo);
-  z-index: 1;
 }
 #backAboutImg {
   margin-top: -450px;
   margin-left: 5px;
-  display: block;
   background-color: var(--backGroundFour);
   width: 400px;
   height: 480px;
@@ -224,6 +226,7 @@ body {
   padding-top: 50px;
   color: var(--letterColorOne);
   padding-bottom: 50px;
+  border-bottom: 1px solid var(--backGroundThree);
 }
 #skillsSmallText {
   padding: 20px 0px;
@@ -239,7 +242,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   margin: 20px;
 }
 .tableItems img {
@@ -266,6 +268,7 @@ body {
   text-align: center;
   color: var(--letterColorOne);
   padding-bottom: 50px;
+  border-bottom: 1px solid var(--backGroundThree);
 }
 #projectsSmallText {
   padding: 20px 0px;
@@ -279,6 +282,7 @@ body {
 }
 .projects {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   background-color: var(--backGroundOne);
@@ -287,6 +291,7 @@ body {
   border-radius: 20px;
 }
 .imgPart {
+  width: 50%;
   background-color: #0e1423;
   padding: 40px;
   border-radius: 20px 0px 0px 20px;
@@ -306,12 +311,14 @@ body {
 }
 .textPart {
   text-align: left;
+  width: 50%;
 }
 .textPart h2 {
   padding: 0px 30px;
 }
 .textPart p {
   padding: 20px 30px;
+  line-height: 25px;
   font-size: 17px;
 }
 .textPart span {
@@ -343,6 +350,7 @@ body {
   padding-bottom: 50px;
   color: var(--letterColorOne);
   text-align: center;
+  border-bottom: 1px solid var(--backGroundThree);
 }
 .contactSmallText {
   padding: 40px 0px;

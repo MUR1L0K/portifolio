@@ -1,8 +1,8 @@
 window.addEventListener("scroll", function () {
-  var navbar = document.getElementById("header");
+  var header = document.getElementById("header");
   if (window.scrollY > 0) {
-    navbar.classList.add("scroll");
+    header.classList.add("scroll");
   } else {
-    navbar.classList.remove("scroll");
+    header.classList.remove("scroll");
   }
 });
