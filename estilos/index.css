@@ -7,8 +7,13 @@
   --backGroundTwo: #111827;
   --backGroundThree: #fff;
   --backGroundFour: #374151;
+  --backGroundFive: #0e1423;
   --letterColorOne: #fff;
   --letterColorTwo: #172439;
+  --letterColorThree: #030712;
+  --linkTextShadow: rgba(255, 255, 255, 0.8);
+  --downloadBackGround: #ffffffc9;
+  --socialLinksBackGround: #ffffff44;
 }
 
 @keyframes blink {
@@ -33,6 +38,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.icons {
+  color: var(--letterColorOne);
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -41,9 +50,11 @@ body {
   transition: border 0.3s ease;
   z-index: 1;
 }
+
 #header.scroll {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--letterColorOne);
 }
+
 #nav {
   display: flex;
   flex-wrap: wrap;
@@ -51,38 +62,69 @@ body {
   justify-content: space-between;
   padding: 20px 30px;
 }
+
+.fa-house {
+  font-size: 30px;
+}
+
 #linksPart {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
 }
+
 .menuLinks {
   text-decoration: none;
   color: var(--letterColorOne);
   transition: text-shadow 0.3s ease;
 }
+
 .menuLinks:hover {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px var(--linkTextShadow);
 }
-#homeButton {
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--letterColorThree);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   cursor: pointer;
-  width: 40px;
+  padding: 5px;
+  position: relative;
+  border-radius: 50px;
+  height: 21px;
+  width: 50px;
+  border: 1px solid var(--letterColorOne);
+  transform: scale(1.5);
 }
-#themeButton {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  transition: 0.3s;
-  padding: 4px;
-  border-radius: 5px;
-  margin-top: -10px;
+
+.ball {
+  position: absolute;
+  background-color: var(--letterColorOne);
+  border-radius: 50%;
+  top: 1.5px;
+  left: 2px;
+  height: 17px;
+  width: 17px;
+  transform: translateX(1px);
+  transition: transform 0.1s linear;
 }
-#themeButton:hover {
-  background-color: #ffffff28;
+
+.checkbox:checked + .label .ball {
+  transform: translate(26.5px);
 }
-#themeImg {
-  width: 30px;
+
+.fa-moon,
+.fa-sun {
+  color: var(--letterColorOne);
+  font-size: 14px;
 }
+
 #downloadButton {
   cursor: pointer;
   background-color: var(--backGroundThree);
@@ -94,9 +136,11 @@ body {
   margin-top: -10px;
   transition: 0.3s;
 }
+
 #downloadButton:hover {
-  background-color: #ffffffc9;
+  background-color: var(--downloadBackGround);
 }
+
 #presentationSection {
   display: flex;
   flex-wrap: wrap;
@@ -107,21 +151,26 @@ body {
   height: 100vh;
   border-bottom: 1px solid var(--backGroundThree);
 }
+
 #presentationText {
   width: 55%;
 }
+
 #presentationTitle {
   font-size: 40px;
   padding-bottom: 5px;
 }
+
 #presentationP {
   line-height: 20px;
 }
+
 #profileImg {
   padding-top: 50px;
   width: 280px;
   border: 10px solid var(--backGroundOne);
 }
+
 #imgBackground {
   margin-top: -280px;
   margin-left: 40px;
@@ -129,24 +178,25 @@ body {
   width: 280px;
   height: 310px;
 }
+
 #locationText {
   display: flex;
   gap: 10px;
   align-items: center;
   padding-top: 30px;
 }
+
 #locationText p {
   margin-top: 5px;
 }
-#locationImg {
-  width: 20px;
-}
+
 #onlineText {
   display: flex;
   gap: 10px;
   align-items: center;
   padding-top: 10px;
 }
+
 #onlineImg {
   background-color: rgb(6, 163, 6);
   border-radius: 50%;
@@ -154,17 +204,20 @@ body {
   height: 15px;
   animation: blink 1s infinite;
 }
+
 .socialLinks {
   padding-top: 30px;
 }
+
 .otherLinks {
   width: 40px;
   margin-right: 15px;
   padding: 5px;
   transition: 0.3s;
 }
+
 .otherLinks:hover {
-  background-color: #ffffff44;
+  background-color: var(--socialLinksBackGround);
   border-radius: 5px;
 }
 
@@ -175,6 +228,7 @@ body {
   padding-top: 50px;
   border-bottom: 1px solid var(--backGroundThree);
 }
+
 #aboutPart {
   display: flex;
   flex-wrap: wrap;
@@ -183,6 +237,7 @@ body {
   padding: 30px;
   padding-bottom: 50px;
 }
+
 .SectionsTitle {
   background-color: var(--backGroundFour);
   width: fit-content;
@@ -190,12 +245,14 @@ body {
   padding: 10px 20px;
   border-radius: 30px;
 }
+
 #aboutImg {
   height: 480px;
   width: 400px;
   margin-left: 10px;
   border: 10px solid var(--backGroundTwo);
 }
+
 #backAboutImg {
   margin-top: -450px;
   margin-left: 5px;
@@ -203,18 +260,22 @@ body {
   width: 400px;
   height: 480px;
 }
+
 #aboutImgPart {
   width: 40%;
 }
+
 #aboutTextPart {
   width: 60%;
 }
+
 .aboutP {
   margin-left: 80px;
   padding-top: 20px;
   line-height: 20px;
   text-align: justify;
 }
+
 #aboutUl {
   column-count: 2;
   padding-left: 15px;
@@ -228,15 +289,18 @@ body {
   padding-bottom: 50px;
   border-bottom: 1px solid var(--backGroundThree);
 }
+
 #skillsSmallText {
   padding: 20px 0px;
   font-size: 20px;
 }
+
 #sckillsTable {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
+
 .tableItems {
   display: flex;
   flex-direction: column;
@@ -244,6 +308,7 @@ body {
   justify-content: center;
   margin: 20px;
 }
+
 .tableItems img {
   padding: 10px;
   width: 74px;
@@ -251,12 +316,15 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+
 .tableItems img:hover {
   scale: 1.1;
 }
+
 .tableItems img:not(:hover) {
   opacity: 50%;
 }
+
 .tableItems p {
   font-size: 20px;
   font-weight: bold;
@@ -270,16 +338,19 @@ body {
   padding-bottom: 50px;
   border-bottom: 1px solid var(--backGroundThree);
 }
+
 #projectsSmallText {
   padding: 20px 0px;
   font-size: 20px;
 }
+
 #projectsList {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -289,13 +360,16 @@ body {
   width: 90%;
   margin: 20px;
   border-radius: 20px;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.199);
 }
+
 .imgPart {
   width: 50%;
-  background-color: #0e1423;
+  background-color: var(--backGroundFive);
   padding: 40px;
   border-radius: 20px 0px 0px 20px;
 }
+
 .projectImg {
   width: 480px;
   height: 320px;
@@ -303,45 +377,59 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+
 .projectImg:hover {
   scale: 1.05;
 }
+
 .projectImg:not(:hover) {
   opacity: 50%;
 }
+
 .textPart {
   text-align: left;
   width: 50%;
 }
+
 .textPart h2 {
   padding: 0px 30px;
 }
+
 .textPart p {
   padding: 20px 30px;
   line-height: 25px;
   font-size: 17px;
 }
+
 .textPart span {
-  background-color: #0e1423;
+  background-color: var(--backGroundFive);
   padding: 10px;
   margin-right: 20px;
   border-radius: 20px;
 }
+
 .linkContainer {
   margin-top: 30px;
   padding: 0px 34px;
 }
-.linkImg {
-  width: 20px;
+
+.fa-up-right-from-square {
+  transition: 0.3s;
 }
-#plusLink {
-  width: 40px;
+
+.fa-up-right-from-square:hover {
+  transform: scale(1.2);
+}
+
+.fa-plus {
   margin-top: 20px;
+  font-size: 30px;
   border-radius: 100%;
   transition: 0.5s;
 }
-#plusLink:hover {
-  scale: 1.1;
+
+.fa-plus:hover {
+  scale: 1.2;
 }
 
 #contactSection {
@@ -352,10 +440,12 @@ body {
   text-align: center;
   border-bottom: 1px solid var(--backGroundThree);
 }
+
 .contactSmallText {
   padding: 40px 0px;
   font-size: 20px;
 }
+
 #contactDiv {
   display: flex;
   flex-direction: column;
@@ -364,25 +454,34 @@ body {
   padding-top: 50px;
   row-gap: 30px;
 }
-.contactIcons {
+
+.fa-phone,
+.fa-envelope {
   width: 40px;
   margin-bottom: -10px;
   margin-right: 20px;
 }
+
 .contactText {
   line-height: 20px;
   font-size: 40px;
   margin-bottom: 20px;
 }
+
+.fa-copy {
+  font-size: 40px;
+}
+
 .copyButton {
   background-color: transparent;
   border: none;
   margin-left: 20px;
   cursor: pointer;
-  padding: 10px 0px 16px 19px;
+  padding: 10px 15px;
   border-radius: 10px;
   transition: 0.3s;
 }
+
 .copyButton:hover {
   background-color: #ffffff28;
 }
