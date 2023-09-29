@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
-    <link rel="stylesheet" href="estilos/index.css" />
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/index.js" defer></script>
     <script src="https://kit.fontawesome.com/cee6affc0e.js" crossorigin="anonymous" defer></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   </head>
   <body id="body" data-theme="dark">
     <header id="header">
@@ -27,7 +28,7 @@
               <div class="ball"></div>
             </label>
           </div>
-          <a href="#" download="files/CV.pdf"
+          <a href="files/CV.pdf" download
             ><button id="downloadButton">Download CV</button></a
           >
         </div>
@@ -52,13 +53,13 @@
             <p>Disponível para novos projetos</p>
           </div>
           <div class="socialLinks">
-            <a href=""
+            <a href="https://github.com/MUR1L0K" target="_blank"
               ><img
                 src="images/github-white.png"
                 alt=""
                 class="otherLinks" 
                 id="gitHubImg"/></a
-            ><a href=""
+            ><a href="https://www.linkedin.com/in/murilo-klein/" target="_blank"
               ><img
                 src="images/linkedin-white.png"
                 alt=""
@@ -68,7 +69,7 @@
           </div>
         </div>
         <div>
-          <img src="images/profile.jpg" alt="" id="profileImg" />
+          <img src="images/Polish_20230928_223017812.jpg" alt="" id="profileImg" />
           <div id="imgBackground"></div>
         </div>
       </section>
@@ -76,43 +77,45 @@
         <h3 class="SectionsTitle">Sobre mim</h2>
         <div id="aboutPart">
           <div id="aboutImgPart">
-            <img src="images/profile.jpg" alt="" id="aboutImg"/>
+            <img src="images/Screenshot_20230528_235127_Snapchat.jpg" alt="" id="aboutImg"/>
             <div id="backAboutImg"></div>
           </div>
           <div id="aboutTextPart">
-            <h2>Curious about me? Here you have it:</h2>
-            <p class="aboutP">I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
-            <p class="aboutP">I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+            <h2>
+              Algumas curiosidades sobre mim
+            </h2>
+            <p class="aboutP">Sou auto-proclamado full-stack designer "especializado" em React.js & Node.js (com muito a aprender ainda). Sou um entusiasta em trazer aspectos técnicos e digitais a vida. User experience, pixel designer, e clean code, legivel, códigos altamente performaveis são o que importa para mim.</p>
+            <p class="aboutP">Eu comecei minha jornada como desenvolvedor web em 2022, desde então, continuei a me aperfeiçoar e crescer como um desenvolvedor, aceitando desafios e aprendendo as ultimas técnologias ao longo do caminho. Agora, após 1 ano desde que eu comecei minha carreira como desenvolvedor estou em busca do meu primeiro emprego na área, crendo ja ter conhecimentos necessários em React.js, TypeScript, Next.js e mais.
             </p>
-            <p class="aboutP">I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
-            <p class="aboutP">When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
-            <p class="aboutP">Finally, some quick bits about me.</p>
+            <p class="aboutP">Sou bem criativo e gosto de trabalhar em produtos end-to-end, gosto de trabalhar em equipe e estou disposto a aprender muito com meus colegas de trabalho.</p>
+            <p class="aboutP">Desde 2022 venho fazendo cursos e me aperfeiçoando na área, aprendendo sobre as ultimas técnologias e me capacitando para conseguir o primeiro emprego, creio que já tenho capacidade para me candidatar a vagas de junior.</p>
+            <p class="aboutP">Mais algumas poucas curiosidades sobre mim.</p>
             <ul class="aboutP" id="aboutUl">
-              <li>B.E. in Computer Engineering
+              <li>Cursando Bacharelado em Ciências da computação na UPF
               </li>
-              <li>Full time freelancer
+              <li>Livre para empregos Full time
               </li>
-              <li>Avid learner
+              <li>Aluno Focado
               </li>
-              <li>Aspiring indie hacker
+              <li>Desenvolvedor junior
               </li>
             </ul>
-            <p class="aboutP">One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉</p>
+            <p class="aboutP">Uma ultima coisa, estou disponível para trabalho, então sintas-se a vontade para entrar em contato! 😉</p>
           </div>
         </div>
       </section>
       <section id="skillsSection">
         <h3 class="SectionsTitle">Habilidades</h3>
-        <p id="skillsSmallText">The skills, tools and technologies I am really good at:</p>
+        <p id="skillsSmallText">Técnologias e ferramentas que tenho mais afinidade:</p>
         <div id="sckillsTable">
-          <div class="tableItems"><img src="images/icon-html-removebg-preview.png" alt=""><p>HTML</p></div>
-          <div class="tableItems"><img src="images/icon-css.png" alt=""><p>CSS</p></div>
-          <div class="tableItems"><img src="images/icon-javascript.svg" alt=""><p>JavaScript</p></div>
-          <div class="tableItems"><img src="images/icon-react.svg" alt=""><p>React.Js</p></div>
-          <div class="tableItems"><img src="images/icon-nodejs.svg" alt=""><p>Node.Js</p></div>
-          <div class="tableItems"><img src="images/icon-sass.svg" alt=""><p>Sass</p></div>
-          <div class="tableItems"><img src="images/icon-figma.svg" alt=""><p>Figma</p></div>
-          <div class="tableItems"><img src="images/php-icon-removebg-preview.png" alt=""><p>PHP</p></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="images/icon-html-removebg-preview.png" alt=""><p>HTML</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><img src="images/icon-css.png" alt=""><p>CSS</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="images/icon-javascript.svg" alt=""><p>JavaScript</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank"><img src="images/icon-react.svg" alt=""><p>React.Js</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank"><img src="images/icon-nodejs.svg" alt=""><p>Node.Js</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/CSS_preprocessor" target="_blank"><img src="images/icon-sass.svg" alt=""><p>Sass</p></a></div>
+          <div class="tableItems"><a href="https://www.figma.com/" target="_blank"><img src="images/icon-figma.svg" alt=""><p>Figma</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/PHP" target="_blank"><img src="images/php-icon-removebg-preview.png" alt=""><p>PHP</p></a></div>
         </div>
       </section>
       <section id="projectsSection">
@@ -120,19 +123,19 @@
         <p id="projectsSmallText">Some of the noteworthy projects I have built:</p>
         <div id="projectsList">
           <div class="projects">
-            <div class="imgPart"><img src="images/projeto-calculadora.png" alt="" class="projectImg"></div>
+            <div class="imgPart"><a href="https://mur1l0k.github.io/Calculadora/" target="_blank"><img src="images/projeto-calculadora.png" alt="" class="projectImg"></a></div>
             <div class="textPart">
-              <h2>Calculadora</h2><p>A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <h2>Calculadora</h2><p>Um projeto simples em HTML, CSS e JS de uma calculador para realizar operações matemáticas.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="https://mur1l0k.github.io/Calculadora/" target="_blank" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
           </div>
           <div class="projects">
-            <div class="imgPart"><img src="images/projeto-weather.png" alt="" class="projectImg"></div>
+            <div class="imgPart"><a href="https://mur1l0k.github.io/weatherSite/" target="_blank"><img src="images/projeto-weather.png" alt="" class="projectImg"></a></div>
             <div class="textPart">
-              <h2>Weather Site</h2><p>A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <h2>Weather Site</h2><p>Uma aplicação web de design simples em HTML, CSS e JS com integração de duas APIs para verificar o clima de qualquer cidade que você pesquisar.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="https://mur1l0k.github.io/weatherSite/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
           </div>
           <div class="projects">
-            <div class="imgPart"><img src="images/projeto-marcador.png" alt="" class="projectImg"></div>
+            <div class="imgPart"><a href=""><img src="images/projeto-marcador.png" alt="" class="projectImg"></a></div>
             <div class="textPart">
               <h2>Marcador de pontos</h2><p>A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.</p>
               <p><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
@@ -152,14 +155,14 @@
         </div>
         <p class="contactSmallText">You may also find me on these platforms!</p>
         <div class="socialLinks">
-          <a href=""
+          <a href="https://github.com/MUR1L0K" target="_blank"
             ><img
               src="images/github-white.png"
               alt=""
               class="otherLinks" 
               id="gitHubImg02"
               /></a
-          ><a href=""
+          ><a href="https://www.linkedin.com/in/murilo-klein/" target="_blank"
             ><img
               src="images/linkedin-white.png"
               alt=""

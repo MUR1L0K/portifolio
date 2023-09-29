@@ -1,3 +1,4 @@
+//Animação de borda no header após scroll
 window.addEventListener("scroll", function () {
   var header = document.getElementById("header");
   if (window.scrollY > 0) {
@@ -7,6 +8,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
+//troca de tema do site
 document.getElementById("chk").addEventListener("change", () => {
   const body = document.querySelector("body");
   const root = document.querySelector(":root");
@@ -26,7 +28,6 @@ document.getElementById("chk").addEventListener("change", () => {
     root.style.setProperty("--linkTextShadow", "rgb(0, 0, 0)");
     root.style.setProperty("--downloadBackGround", "rgba(0, 0, 0, 0.776)");
     root.style.setProperty("--socialLinksBackGround", "#2e2e2e44");
-
     body.dataset.theme = "ligth";
   } else {
     document.getElementById("gitHubImg").src = "images/github-white.png";
@@ -44,7 +45,6 @@ document.getElementById("chk").addEventListener("change", () => {
     root.style.setProperty("--linkTextShadow", "rgba(255, 255, 255, 0.8)");
     root.style.setProperty("--downloadBackGround", "#ffffffc9");
     root.style.setProperty("--socialLinksBackGround", "#ffffff44");
-
     body.dataset.theme = "dark";
   }
 });

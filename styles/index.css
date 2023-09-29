@@ -278,6 +278,7 @@ body {
 
 #aboutUl {
   column-count: 2;
+  column-gap: 40px;
   padding-left: 15px;
 }
 
@@ -323,6 +324,11 @@ body {
 
 .tableItems img:not(:hover) {
   opacity: 50%;
+}
+
+.tableItems a {
+  text-decoration: none;
+  color: var(--letterColorOne);
 }
 
 .tableItems p {
