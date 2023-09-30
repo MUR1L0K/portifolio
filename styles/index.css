@@ -483,13 +483,13 @@ body {
   border: none;
   margin-left: 20px;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 5px 10px;
   border-radius: 10px;
   transition: 0.3s;
 }
 
 .copyButton:hover {
-  background-color: #ffffff28;
+  background-color: var(--socialLinksBackGround);
 }
 
 #footer {

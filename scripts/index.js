@@ -48,3 +48,16 @@ document.getElementById("chk").addEventListener("change", () => {
     body.dataset.theme = "dark";
   }
 });
+
+//copy function
+document.getElementsByClassName("copyButton").forEach(
+  addEventListener("click", (ev) => {
+    const button = ev.target;
+    console.log(button);
+    if (button.id == "emailButton") {
+      navigator.clipboard.writeText("murilo.kkleinn@gmail.com");
+    } else if (button.id == "phoneButton") {
+      navigator.clipboard.writeText("+55 (54) 99148-7046");
+    }
+  })
+);
