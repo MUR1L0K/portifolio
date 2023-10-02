@@ -15,7 +15,27 @@
         <div>
           <a href="#presentationSection"><i class="fa-solid fa-house icons"></i></a>
         </div>
-        <div id="linksPart">
+        <div class="linksPart">
+          <a href="#aboutSection" class="menuLinks">Sobre</a
+          ><a href="#skillsSection" class="menuLinks">Habilidades</a
+          ><a href="#projectsSection" class="menuLinks">Projetos</a
+          ><a href="#contactSection" class="menuLinks">Contato</a>
+          <div id="themePart">
+            <input type="checkbox" name="check" class="checkbox" id="chk">
+            <label for="chk" class="label">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+          <a href="files/CV.pdf" download
+            ><button class="downloadButton">Download CV</button></a
+          >
+        </div>
+        <div id="mobileMenuButton"><button id="menuButton"><i class="fa-solid fa-bars icons"></i></button></div>
+      </nav>
+      <div id="mobileMenu">
+        <div class="linksPart">
           <a href="#aboutSection" class="menuLinks">Sobre</a
           ><a href="#skillsSection" class="menuLinks">Habilidades</a
           ><a href="#projectsSection" class="menuLinks">Projetos</a
@@ -29,10 +49,10 @@
             </label>
           </div>
           <a href="files/CV.pdf" download
-            ><button id="downloadButton">Download CV</button></a
+            ><button class="downloadButton">Download CV</button></a
           >
         </div>
-      </nav>
+      </div>
     </header>
     <main>
       <section id="presentationSection">
@@ -70,7 +90,6 @@
         </div>
         <div>
           <img src="images/Polish_20230928_223017812.jpg" alt="" id="profileImg" />
-          <div id="imgBackground"></div>
         </div>
       </section>
       <section id="aboutSection">
@@ -78,7 +97,6 @@
         <div id="aboutPart">
           <div id="aboutImgPart">
             <img src="images/Screenshot_20230528_235127_Snapchat.jpg" alt="" id="aboutImg"/>
-            <div id="backAboutImg"></div>
           </div>
           <div id="aboutTextPart">
             <h2>
@@ -120,25 +138,25 @@
       </section>
       <section id="projectsSection">
         <h3 class="SectionsTitle">Projetos</h3>
-        <p id="projectsSmallText">Some of the noteworthy projects I have built:</p>
+        <p id="projectsSmallText">Alguns dos projetos que eu construi:</p>
         <div id="projectsList">
           <div class="projects">
             <div class="imgPart"><a href="https://mur1l0k.github.io/Calculadora/" target="_blank"><img src="images/projeto-calculadora.png" alt="" class="projectImg"></a></div>
             <div class="textPart">
-              <h2>Calculadora</h2><p>Um projeto simples em HTML, CSS e JS de uma calculador para realizar operações matemáticas.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="https://mur1l0k.github.io/Calculadora/" target="_blank" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <h2>Calculadora</h2><p>Um projeto simples em HTML, CSS e JS de uma calculador para realizar operações matemáticas.</p><p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="https://mur1l0k.github.io/Calculadora/" target="_blank" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
           </div>
           <div class="projects">
             <div class="imgPart"><a href="https://mur1l0k.github.io/weatherSite/" target="_blank"><img src="images/projeto-weather.png" alt="" class="projectImg"></a></div>
             <div class="textPart">
-              <h2>Weather Site</h2><p>Uma aplicação web de design simples em HTML, CSS e JS com integração de duas APIs para verificar o clima de qualquer cidade que você pesquisar.</p><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="https://mur1l0k.github.io/weatherSite/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <h2>Weather Site</h2><p>Uma aplicação web de design simples em HTML, CSS e JS com integração de duas APIs para verificar o clima de qualquer cidade que você pesquisar.</p><p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="https://mur1l0k.github.io/weatherSite/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
           </div>
           <div class="projects">
             <div class="imgPart"><a href="https://mur1l0k.github.io/weeklyPlanner/" target="_blank"><img src="images/projeto-planner.png" alt="" class="projectImg"></a></div>
             <div class="textPart">
               <h2>Planner Semanal</h2><p>Um projeto de planner semanal feito em React/vite para anotar as atividades semanais.</p>
-              <p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Vite</span></p><br><a href="https://mur1l0k.github.io/weeklyPlanner/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Vite</span></p><br><a href="https://mur1l0k.github.io/weeklyPlanner/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
             <div>
             </div>
@@ -148,12 +166,12 @@
       </section>
       <section id="contactSection">
         <h3 class="SectionsTitle">Entrar em contato</h3>
-        <p class="contactSmallText">What’s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.</p>
+        <p class="contactSmallText">Você pode me chamar em:</p>
         <div id="contactDiv">
           <p class="contactText"><i class="fa-solid fa-envelope icons"></i> murilo.kkleinn@gmail.com <button class="copyButton" ><i class="fa-regular fa-copy icons" id="emailButton"></i></button></p>
           <p class="contactText"><i class="fa-solid fa-phone icons"></i>+55 (54) 99148-7046 <button class="copyButton" ><i class="fa-regular fa-copy icons" id="phoneButton"></i></button></p>
         </div>
-        <p class="contactSmallText">You may also find me on these platforms!</p>
+        <p class="contactSmallText">Também pode me encotrar nessas plataformas!</p>
         <div class="socialLinks">
           <a href="https://github.com/MUR1L0K" target="_blank"
             ><img

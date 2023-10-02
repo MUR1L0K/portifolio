@@ -48,7 +48,7 @@ body {
   height: 70px;
   background-color: var(--backGroundOne);
   transition: border 0.3s ease;
-  z-index: 1;
+  z-index: 2;
 }
 
 #header.scroll {
@@ -67,7 +67,7 @@ body {
   font-size: 30px;
 }
 
-#linksPart {
+.linksPart {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
@@ -125,7 +125,7 @@ body {
   font-size: 14px;
 }
 
-#downloadButton {
+.downloadButton {
   cursor: pointer;
   background-color: var(--backGroundThree);
   border-radius: 10px;
@@ -137,8 +137,28 @@ body {
   transition: 0.3s;
 }
 
-#downloadButton:hover {
+.downloadButton:hover {
   background-color: var(--downloadBackGround);
+}
+
+#mobileMenuButton {
+  display: none;
+}
+
+#menuButton {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#mobileMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closed {
+  display: none !important;
 }
 
 #presentationSection {
@@ -166,17 +186,10 @@ body {
 }
 
 #profileImg {
-  padding-top: 50px;
   width: 280px;
   border: 10px solid var(--backGroundOne);
-}
-
-#imgBackground {
-  margin-top: -280px;
-  margin-left: 40px;
-  background-color: var(--backGroundFour);
-  width: 280px;
-  height: 310px;
+  box-shadow: 20px 20px 0px 0px var(--backGroundFour);
+  margin-bottom: 40px;
 }
 
 #locationText {
@@ -246,23 +259,15 @@ body {
   border-radius: 30px;
 }
 
+#aboutImgPart {
+  width: 40%;
+}
+
 #aboutImg {
   height: 480px;
   width: 400px;
-  margin-left: 10px;
   border: 10px solid var(--backGroundTwo);
-}
-
-#backAboutImg {
-  margin-top: -450px;
-  margin-left: 5px;
-  background-color: var(--backGroundFour);
-  width: 400px;
-  height: 480px;
-}
-
-#aboutImgPart {
-  width: 40%;
+  box-shadow: 30px 30px 0px 0px var(--backGroundFour);
 }
 
 #aboutTextPart {
@@ -377,8 +382,8 @@ body {
 }
 
 .projectImg {
-  width: 480px;
-  height: 320px;
+  width: 90%;
+  height: 300px;
   border-radius: 20px;
   transition: 0.5s;
   cursor: pointer;
@@ -483,7 +488,7 @@ body {
   border: none;
   margin-left: 20px;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -497,4 +502,116 @@ body {
   color: var(--letterColorOne);
   text-align: center;
   padding: 20px;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--backGroundOne);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--letterColorOne);
+}
+
+@media screen and (min-width: 1500px) {
+  .projects {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1195px) {
+  .projects {
+    flex-direction: column;
+  }
+  .imgPart {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .textPart {
+    padding: 20px;
+    width: 100%;
+  }
+  .projectImg {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #presentationSection {
+    padding-top: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+  #aboutPart {
+    flex-direction: column-reverse;
+  }
+  #aboutTextPart {
+    width: 90%;
+    margin: auto;
+  }
+  .aboutP {
+    margin-left: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #aboutImgPart {
+    width: 100%;
+  }
+  .projectImg {
+    width: 80%;
+  }
+}
+@media (max-width: 750px) {
+  nav .linksPart {
+    display: none;
+  }
+  #mobileMenuButton {
+    display: block;
+  }
+  #mobileMenu .linksPart {
+    align-self: flex-end;
+    background-color: var(--backGroundOne);
+    margin-top: -3px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px 0px 10px 10px;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contactText {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #aboutImg {
+    width: 80%;
+  }
+  #sckillsTable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .spanPart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .contactText {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #sckillsTable {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .contactText {
+    font-size: 15px;
+  }
 }

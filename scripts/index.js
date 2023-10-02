@@ -8,6 +8,19 @@ window.addEventListener("scroll", function () {
   }
 });
 
+//Mostrar o Menu
+let mobileMenu = document.querySelector("#mobileMenu");
+document.getElementById("menuButton").addEventListener("click", () => {
+  if (mobileMenu.classList.contains("closed")) {
+    mobileMenu.classList.remove("closed");
+  } else {
+    mobileMenu.classList.add("closed");
+  }
+});
+if (window.innerWidth > 750) {
+  mobileMenu.classList.add("closed");
+}
+
 //troca de tema do site
 document.getElementById("chk").addEventListener("change", () => {
   const body = document.querySelector("body");
@@ -50,14 +63,14 @@ document.getElementById("chk").addEventListener("change", () => {
 });
 
 //copy function
-document.getElementsByClassName("copyButton").forEach(
-  addEventListener("click", (ev) => {
+let copyButtons = document.querySelectorAll(".copyButton");
+copyButtons.forEach((button) => {
+  button.addEventListener("click", (ev) => {
     const button = ev.target;
-    console.log(button);
     if (button.id == "emailButton") {
       navigator.clipboard.writeText("murilo.kkleinn@gmail.com");
     } else if (button.id == "phoneButton") {
       navigator.clipboard.writeText("+55 (54) 99148-7046");
     }
-  })
-);
+  });
+});
