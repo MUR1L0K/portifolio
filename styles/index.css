@@ -539,7 +539,7 @@ body {
     padding-top: 50px;
     flex-direction: column;
     text-align: center;
-    height: 130vh;
+    height: 140vh;
   }
   #aboutPart {
     flex-direction: column-reverse;
