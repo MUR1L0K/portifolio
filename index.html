@@ -16,17 +16,23 @@
           <a href="#presentationSection"><i class="fa-solid fa-house icons"></i></a>
         </div>
         <div class="linksPart">
-          <a href="#aboutSection" class="menuLinks">Sobre</a
-          ><a href="#skillsSection" class="menuLinks">Habilidades</a
-          ><a href="#projectsSection" class="menuLinks">Projetos</a
-          ><a href="#contactSection" class="menuLinks">Contato</a>
-          <div id="themePart">
+          <a href="#aboutSection" class="menuLinks sobre">Sobre</a
+          ><a href="#skillsSection" class="menuLinks habilidades">Habilidades</a
+          ><a href="#projectsSection" class="menuLinks projetos">Projetos</a
+          ><a href="#contactSection" class="menuLinks contato">Contato</a>
+          <div class="themePart">
             <input type="checkbox" name="check" class="checkbox" id="chk">
             <label for="chk" class="label">
               <i class="fa-regular fa-moon"></i>
               <i class="fa-regular fa-sun"></i>
               <div class="ball"></div>
             </label>
+          </div>
+          <div class="language">
+            <select name="languages" class="languages">
+              <option value="pt" class="options pt">Português</option>
+              <option value="en" class="options en">English</option>
+            </select>
           </div>
           <a href="files/CV.pdf" download
             ><button class="downloadButton">Download CV</button></a
@@ -36,17 +42,23 @@
       </nav>
       <div id="mobileMenu">
         <div class="linksPart">
-          <a href="#aboutSection" class="menuLinks">Sobre</a
-          ><a href="#skillsSection" class="menuLinks">Habilidades</a
-          ><a href="#projectsSection" class="menuLinks">Projetos</a
-          ><a href="#contactSection" class="menuLinks">Contato</a>
-          <div>
-            <input type="checkbox" name="check" class="checkbox" id="chk">
-            <label for="chk" class="label">
+          <a href="#aboutSection" class="menuLinks sobre">Sobre</a
+            ><a href="#skillsSection" class="menuLinks habilidades">Habilidades</a
+            ><a href="#projectsSection" class="menuLinks projetos">Projetos</a
+            ><a href="#contactSection" class="menuLinks contato">Contato</a>
+          <div class="themePart">
+            <input type="checkbox" name="check" class="checkbox" id="chk02">
+            <label for="chk02" class="label">
               <i class="fa-regular fa-moon"></i>
               <i class="fa-regular fa-sun"></i>
               <div class="ball"></div>
             </label>
+          </div>
+          <div class="language">
+            <select name="languages" class="languages">
+              <option value="pt" class="options pt">Português</option>
+              <option value="en" class="options en">English</option>
+            </select>
           </div>
           <a href="files/CV.pdf" download
             ><button class="downloadButton">Download CV</button></a
@@ -66,96 +78,96 @@
           </p>
           <div id="locationText">
             <i class="fa-solid fa-location-dot icons"></i>            
-            <p>Xv de Novembro / Brasil</p>
+            <p id="textLocation">Xv de Novembro / Brasil</p>
           </div>
           <div id="onlineText">
             <div id="onlineImg"></div>
-            <p>Disponível para novos projetos</p>
+            <p id="onlineP">Disponível para novos projetos</p>
           </div>
           <div class="socialLinks">
             <a href="https://github.com/MUR1L0K" target="_blank"
               ><img
                 src="images/github-white.png"
-                alt=""
+                alt="GitHub"
                 class="otherLinks" 
                 id="gitHubImg"/></a
             ><a href="https://www.linkedin.com/in/murilo-klein/" target="_blank"
               ><img
                 src="images/linkedin-white.png"
-                alt=""
+                alt="LinkedIn"
                 class="otherLinks"
                 id="linkedinImg"
             /></a>
           </div>
         </div>
         <div>
-          <img src="images/profile.jpg" alt="" id="profileImg" />
+          <img src="images/profile.jpg" alt="Foto de perfil" id="profileImg" />
         </div>
       </section>
       <section id="aboutSection">
-        <h3 class="SectionsTitle">Sobre mim</h2>
+        <h3 class="SectionsTitle" id="sobreTitle">Sobre mim</h2>
         <div id="aboutPart">
           <div id="aboutImgPart">
-            <img src="images/profile02.jpg" alt="" id="aboutImg"/>
+            <img src="images/profile02.jpg" alt="Foto de perfil 2" id="aboutImg"/>
           </div>
           <div id="aboutTextPart">
-            <h2>
+            <h2 id="sobreSubTitle">
               Algumas curiosidades sobre mim
             </h2>
-            <p class="aboutP">Sou auto-proclamado full-stack designer "especializado" em React.js & Node.js (com muito a aprender ainda). Sou um entusiasta em trazer aspectos técnicos e digitais a vida. User experience, pixel designer, e clean code, legivel, códigos altamente performaveis são o que importa para mim.</p>
-            <p class="aboutP">Eu comecei minha jornada como desenvolvedor web em 2022, desde então, continuei a me aperfeiçoar e crescer como um desenvolvedor, aceitando desafios e aprendendo as ultimas técnologias ao longo do caminho. Agora, após 1 ano desde que eu comecei minha carreira como desenvolvedor estou em busca do meu primeiro emprego na área, crendo ja ter conhecimentos necessários em React.js, TypeScript, Next.js e mais.
+            <p class="aboutP" id="primeiroAboutP">Sou autoproclamado full-stack designer 'especializado' em React.js & Node.js (com muito a aprender ainda). Sou um entusiasta em trazer aspectos técnicos e digitais a vida. User experience, pixel designer, e clean code, legível, códigos altamente performáveis são o que importa.</p>
+            <p class="aboutP" id="segAboutP">Eu comecei minha jornada como desenvolvedor web em 2022, desde então, continuei a me aperfeiçoar e crescer como um desenvolvedor, aceitando desafios e aprendendo as últimas tecnologias ao longo do caminho. Agora, após 1 ano desde que comecei minha carreira como desenvolvedor, estou em busca do meu primeiro emprego na área, crendo já ter conhecimentos necessários em React.js, TypeScript, Next.js e mais.
             </p>
-            <p class="aboutP">Sou bem criativo e gosto de trabalhar em produtos end-to-end, gosto de trabalhar em equipe e estou disposto a aprender muito com meus colegas de trabalho.</p>
-            <p class="aboutP">Desde 2022 venho fazendo cursos e me aperfeiçoando na área, aprendendo sobre as ultimas técnologias e me capacitando para conseguir o primeiro emprego, creio que já tenho capacidade para me candidatar a vagas de junior.</p>
-            <p class="aboutP">Mais algumas poucas curiosidades sobre mim.</p>
+            <p class="aboutP" id="terAboutP">Sou bem criativo e gosto de trabalhar em produtos end-to-end, gosto de trabalhar em equipe e estou disposto a aprender muito com meus colegas de trabalho.</p>
+            <p class="aboutP" id="quarAboutP">Desde 2022 venho fazendo cursos e me aperfeiçoando na área, aprendendo sobre as últimas tecnologias e me capacitando para conseguir o primeiro emprego, creio que já tenho capacidade para me candidatar a vagas de júnior.</p>
+            <p class="aboutP" id="quinAboutP">Mais algumas poucas curiosidades sobre mim:</p>
             <ul class="aboutP" id="aboutUl">
-              <li>Cursando Bacharelado em Ciências da computação na UPF
+              <li id="liUm">Cursando Bacharelado em Ciências da computação na UPF
               </li>
-              <li>Livre para empregos Full time
+              <li id="liDois">Livre para empregos Full time
               </li>
-              <li>Aluno Focado
+              <li id="liTres">Aluno Focado
               </li>
-              <li>Desenvolvedor junior
+              <li id="liQuatro">Desenvolvedor júnior
               </li>
             </ul>
-            <p class="aboutP">Uma ultima coisa, estou disponível para trabalho, então sintas-se a vontade para entrar em contato! 😉</p>
+            <p class="aboutP" id="sexAboutP">Uma última coisa, estou disponível para trabalho, então sintas-se a vontade para entrar em contato! 😉</p>
           </div>
         </div>
       </section>
       <section id="skillsSection">
-        <h3 class="SectionsTitle">Habilidades</h3>
-        <p id="skillsSmallText">Técnologias e ferramentas que tenho mais afinidade:</p>
+        <h3 class="SectionsTitle" id="skillTitle">Habilidades</h3>
+        <p id="skillsSmallText">Tecnologias e ferramentas que tenho mais afinidade:</p>
         <div id="sckillsTable">
-          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="images/icon-html-removebg-preview.png" alt=""><p>HTML</p></a></div>
-          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><img src="images/icon-css.png" alt=""><p>CSS</p></a></div>
-          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="images/icon-javascript.svg" alt=""><p>JavaScript</p></a></div>
-          <div class="tableItems"><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank"><img src="images/icon-react.svg" alt=""><p>React.Js</p></a></div>
-          <div class="tableItems"><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank"><img src="images/icon-nodejs.svg" alt=""><p>Node.Js</p></a></div>
-          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/CSS_preprocessor" target="_blank"><img src="images/icon-sass.svg" alt=""><p>Sass</p></a></div>
-          <div class="tableItems"><a href="https://www.figma.com/" target="_blank"><img src="images/icon-figma.svg" alt=""><p>Figma</p></a></div>
-          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/PHP" target="_blank"><img src="images/php-icon-removebg-preview.png" alt=""><p>PHP</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="images/icon-html-removebg-preview.png" alt="HTML"><p>HTML</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><img src="images/icon-css.png" alt="CSS"><p>CSS</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="images/icon-javascript.svg" alt="JS"><p>JavaScript</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank"><img src="images/icon-react.svg" alt="React.JS"><p>React.Js</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank"><img src="images/icon-nodejs.svg" alt="Node.Js"><p>Node.Js</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/CSS_preprocessor" target="_blank"><img src="images/icon-sass.svg" alt="Sass"><p>Sass</p></a></div>
+          <div class="tableItems"><a href="https://www.figma.com/" target="_blank"><img src="images/icon-figma.svg" alt="Figma"><p>Figma</p></a></div>
+          <div class="tableItems"><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/PHP" target="_blank"><img src="images/php-icon-removebg-preview.png" alt="PHP"><p>PHP</p></a></div>
         </div>
       </section>
       <section id="projectsSection">
-        <h3 class="SectionsTitle">Projetos</h3>
+        <h3 class="SectionsTitle" id="projectsTitle">Projetos</h3>
         <p id="projectsSmallText">Alguns dos projetos que eu construi:</p>
         <div id="projectsList">
           <div class="projects">
-            <div class="imgPart"><a href="https://mur1l0k.github.io/Calculadora/" target="_blank"><img src="images/projeto-calculadora.png" alt="" class="projectImg"></a></div>
+            <div class="imgPart"><a href="https://mur1l0k.github.io/Calculadora/" target="_blank"><img src="images/projeto-calculadora.png" alt="Projeto Calculadora" class="projectImg" id="imgCalculadora"></a></div>
             <div class="textPart">
-              <h2>Calculadora</h2><p>Um projeto simples em HTML, CSS e JS de uma calculador para realizar operações matemáticas.</p><p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="https://mur1l0k.github.io/Calculadora/" target="_blank" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <h2 id="projectOneTitle">Calculadora</h2><p id="projectOneP">Um projeto simples em HTML, CSS e JS de uma calculadora para realizar operações matemáticas.</p><p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span></p><br><a href="https://mur1l0k.github.io/Calculadora/" target="_blank" class="linkContainer"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
           </div>
           <div class="projects">
-            <div class="imgPart"><a href="https://mur1l0k.github.io/weatherSite/" target="_blank"><img src="images/projeto-weather.png" alt="" class="projectImg"></a></div>
+            <div class="imgPart"><a href="https://mur1l0k.github.io/weatherSite/" target="_blank"><img src="images/projeto-weather.png" alt="Projeto Site de clima" class="projectImg" id="imgWeather"></a></div>
             <div class="textPart">
-              <h2>Weather Site</h2><p>Uma aplicação web de design simples em HTML, CSS e JS com integração de duas APIs para verificar o clima de qualquer cidade que você pesquisar.</p><p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="https://mur1l0k.github.io/weatherSite/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
+              <h2 id="projectTwoTitle">Site de clima</h2><p id="projectTwoP">Uma aplicação web de design simples em HTML, CSS e JS com integração de duas APIs para verificar o clima de qualquer cidade que você pesquisar.</p><p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></p><br><a href="https://mur1l0k.github.io/weatherSite/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
           </div>
           <div class="projects">
-            <div class="imgPart"><a href="https://mur1l0k.github.io/weeklyPlanner/" target="_blank"><img src="images/projeto-planner.png" alt="" class="projectImg"></a></div>
+            <div class="imgPart"><a href="https://mur1l0k.github.io/weeklyPlanner/" target="_blank"><img src="images/projeto-planner.png" alt="Projeto Planer Semanal" class="projectImg" id="imgPlaner"></a></div>
             <div class="textPart">
-              <h2>Planner Semanal</h2><p>Um projeto de planner semanal feito em React/vite para anotar as atividades semanais.</p>
+              <h2 id="projectThreeTitle">Planner Semanal</h2><p id="projectThreeP">Um projeto de planner semanal feito em React/vite para anotar as atividades semanais.</p>
               <p class="spanPart"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Vite</span></p><br><a href="https://mur1l0k.github.io/weeklyPlanner/" class="linkContainer" target="_blank"><i class="fa-solid fa-up-right-from-square icons"></i></a>
             </div>
             <div>
@@ -165,32 +177,33 @@
         </div>
       </section>
       <section id="contactSection">
-        <h3 class="SectionsTitle">Entrar em contato</h3>
-        <p class="contactSmallText">Você pode me chamar em:</p>
+        <h3 class="SectionsTitle" id="contactTitle">Entrar em contato</h3>
+        <p class="contactSmallText" id="contactSmallText01">Você pode me chamar em:</p>
         <div id="contactDiv">
           <p class="contactText"><i class="fa-solid fa-envelope icons"></i> murilo.kkleinn@gmail.com <button class="copyButton" ><i class="fa-regular fa-copy icons" id="emailButton"></i></button></p>
           <p class="contactText"><i class="fa-solid fa-phone icons"></i>+55 (54) 99148-7046 <button class="copyButton" ><i class="fa-regular fa-copy icons" id="phoneButton"></i></button></p>
         </div>
-        <p class="contactSmallText">Também pode me encotrar nessas plataformas!</p>
+        <p class="contactSmallText" id="contactSmallText02">Também pode me encotrar nessas plataformas!</p>
         <div class="socialLinks">
           <a href="https://github.com/MUR1L0K" target="_blank"
             ><img
               src="images/github-white.png"
-              alt=""
+              alt="GitHub"
               class="otherLinks" 
               id="gitHubImg02"
               /></a
           ><a href="https://www.linkedin.com/in/murilo-klein/" target="_blank"
             ><img
               src="images/linkedin-white.png"
-              alt=""
+              alt="LinkedIn"
               class="otherLinks"
               id="linkedinImg02"
           /></a>
       </section>
     </main>
     <footer id="footer">
-      <p id="footerText"> &copy; 2023 | Designed and coded by Murilo Klein</p>
+      <p id="footerText">&copy; 2023 | Designed and coded by Murilo Klein
+      </p>
     </footer>
   </body>
 </html>

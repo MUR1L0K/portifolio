@@ -69,8 +69,8 @@ body {
 
 .linksPart {
   display: flex;
-  flex-wrap: wrap;
   gap: 35px;
+  border: none;
 }
 
 .menuLinks {
@@ -125,6 +125,24 @@ body {
   font-size: 14px;
 }
 
+.language {
+  color: var(--letterColorOne);
+  margin: -5px 0px 0px 10px;
+}
+
+.language select {
+  color: var(--letterColorOne);
+  padding: 7px 5px;
+  background-color: var(--backGroundOne);
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--letterColorOne);
+}
+
+.language select:focus {
+  border: 2px solid transparent;
+}
+
 .downloadButton {
   cursor: pointer;
   background-color: var(--backGroundThree);
@@ -154,7 +172,12 @@ body {
 
 #mobileMenu {
   display: flex;
-  justify-content: flex-end;
+  border-bottom: 2px solid var(--letterColorOne);
+  border-left: 2px solid var(--letterColorOne);
+  border-right: 2px solid var(--letterColorOne);
+  width: 200px;
+  margin-left: 70%;
+  float: right;
 }
 
 .closed {
@@ -168,8 +191,8 @@ body {
   justify-content: space-evenly;
   background-color: var(--backGroundOne);
   color: var(--letterColorOne);
-  height: 100vh;
   border-bottom: 1px solid var(--backGroundThree);
+  padding-top: 150px;
 }
 
 #presentationText {
@@ -537,10 +560,9 @@ body {
 }
 @media screen and (max-width: 950px) {
   #presentationSection {
-    padding-top: 50px;
+    padding-top: 150px;
     flex-direction: column;
     text-align: center;
-    height: 150vh;
   }
   #aboutPart {
     flex-direction: column-reverse;
@@ -561,7 +583,7 @@ body {
     width: 80%;
   }
 }
-@media (max-width: 750px) {
+@media screen and (max-width: 880px) {
   nav .linksPart {
     display: none;
   }
@@ -609,16 +631,17 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  #profileImg {
+    width: 80%;
+  }
   #sckillsTable {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-  .contactText {
-    font-size: 15px;
+  .projectImg {
+    height: 150px;
   }
-}
-@media screen and (max-width: 400px) {
   .contactText {
     font-size: 12px;
   }
