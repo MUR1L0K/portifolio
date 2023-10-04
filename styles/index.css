@@ -172,9 +172,9 @@ body {
 
 #mobileMenu {
   display: flex;
-  border-bottom: 2px solid var(--letterColorOne);
-  border-left: 2px solid var(--letterColorOne);
-  border-right: 2px solid var(--letterColorOne);
+  border-bottom: 1px solid var(--letterColorOne);
+  border-left: 1px solid var(--letterColorOne);
+  border-right: 1px solid var(--letterColorOne);
   width: 200px;
   margin-left: 70%;
   float: right;
