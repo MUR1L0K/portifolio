@@ -55,11 +55,32 @@ body {
   border-bottom: 1px solid var(--letterColorOne);
 }
 
+#header02 {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: var(--backGroundOne);
+  transition: border 0.3s ease;
+  z-index: 2;
+}
+
+#header02.scroll {
+  border-bottom: 1px solid var(--letterColorOne);
+}
+
 #nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 30px;
+}
+
+#nav02 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 20px 30px;
 }
 
@@ -373,6 +394,15 @@ body {
   border-bottom: 1px solid var(--backGroundThree);
 }
 
+#projectsSection02 {
+  background-color: var(--backGroundTwo);
+  padding-top: 100px;
+  text-align: center;
+  color: var(--letterColorOne);
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--backGroundThree);
+}
+
 #projectsSmallText {
   padding: 20px 0px;
   font-size: 20px;
@@ -527,6 +557,13 @@ body {
   padding: 20px;
 }
 
+#footer02 {
+  background-color: var(--backGroundOne);
+  color: var(--letterColorOne);
+  text-align: center;
+  padding: 20px;
+}
+
 ::-webkit-scrollbar {
   background-color: var(--backGroundOne);
   width: 10px;
@@ -534,6 +571,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--letterColorOne);
+}
+
+::selection {
+  color: var(--letterColorTwo);
+  background-color: var(--backGroundThree);
 }
 
 @media screen and (min-width: 1500px) {
@@ -584,7 +626,7 @@ body {
   }
 }
 @media screen and (max-width: 880px) {
-  nav .linksPart {
+  #nav .linksPart {
     display: none;
   }
   #mobileMenuButton {
@@ -644,5 +686,16 @@ body {
   }
   .contactText {
     font-size: 12px;
+  }
+  #header02 {
+    height: fit-content;
+  }
+  #nav02 .linksPart {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #projectsSection02 {
+    padding-top: 150px;
   }
 }
