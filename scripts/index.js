@@ -236,6 +236,10 @@ if (document.getElementById("01")) {
       document.getElementById("projectTenP").innerText =
         "Um projeto de conversor de moedas feito em JavaScript.";
       document.getElementById("imgConversor").alt = "Projeto Conversor";
+      document.getElementById("projectElevenTitle").innerText = "Landing Page";
+      document.getElementById("projectElevenP").innerText =
+        "Uma Landing page simples feita em HTML, CSS e com Javascript.";
+      document.getElementById("imgLandingpage03").alt = "Projeto Landing Page";
     } else if (languageSelected == "en") {
       document.getElementById("projectsTitle").innerText = "Projects";
       document.getElementById("projectsSmallText").innerText =
@@ -283,6 +287,10 @@ if (document.getElementById("01")) {
       document.getElementById("projectTenP").innerText =
         "A currency converter project made in JavaScript.";
       document.getElementById("imgConversor").alt = "Converter project";
+      document.getElementById("projectElevenTitle").innerText = "Landing Page";
+      document.getElementById("projectElevenP").innerText =
+        "A simple Landing page made in HTML, CSS and with Javascript.";
+      document.getElementById("imgLandingpage03").alt = "LandingPage Project";
     }
   }
   document.querySelectorAll(".languages").forEach((element) => {
